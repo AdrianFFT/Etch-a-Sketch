@@ -1,0 +1,38 @@
+body{
+    padding:0px;
+    border:0px;
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    justify-content: center;
+    align-items: center;
+    min-width: 520px;
+    min-height: 520px;
+    background-color: blue;
+}
+
+.container{
+    border-style: solid;
+    border-color: black;
+    margin:0px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 520px;
+    max-height: 520px;
+}
+
+.subDiv{
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 35px;
+    max-height: 35px;
+    flex-shrink: 0;
+    flex-grow:1;
+    
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    background-color: white;
+}
