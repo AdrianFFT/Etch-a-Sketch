@@ -1,3 +1,4 @@
+/*
 body{
     padding:0px;
     border:0px;
@@ -17,17 +18,22 @@ body{
     margin:0px;
     display: flex;
     flex-wrap: wrap;
+    *box-sizing: border-box;*
+    *
     min-width: 200px;
     min-height: 200px;
     max-width: 520px;
     max-height: 520px;
+    *
 }
 
 .subDiv{
+    *
     min-width: 30px;
     min-height: 30px;
     max-width: 35px;
     max-height: 35px;
+    *
     flex-shrink: 0;
     flex-grow:1;
     
@@ -35,4 +41,55 @@ body{
     border-color: black;
     border-width: thin;
     background-color: white;
+    margin: 0px;
 }
+*/
+body {
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: arial, monospace;
+    font-size: 70px;
+    color: black;
+  }
+  
+  button {
+    background-color: #99e6ff;
+    border: solid black;
+    border-width: 1px;
+    color: #000000;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  #grid-container {
+    display: inline-block;
+  }
+  
+  .box {
+    background: #ffffff;
+    border-left: #000000 1px solid;
+    border-bottom: #000000 1px solid;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: block;
+    width: 100%;
+    font-size: 0;
+  }
+  
+  .row:first-child {
+    border-top: #000000 1px solid;
+  }
+  
+  .row .box:last-child {
+    border-right: #000000 1px solid;
+  }
